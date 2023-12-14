@@ -14,6 +14,7 @@ Ive included relevant STEP files and parts lists in case you want to build the s
 
 ## Skylights
 ![Skylight](doc/img/Skylights.png)
+
 The skylights can be made using only a laser cutter, and I've included the .dxf files for each sheet material in this repo. Adjust the power and speed according to you machine specs.
 
 The enclosures are made from the following materials:
@@ -25,6 +26,7 @@ The enclosures are made from the following materials:
 
 ## Ambient interface
 ![Interface](doc/img/Ambient.png)
+
 The ambient interface uses a variety of readily available 3D printer parts, a custom dibond panel and a few 3D printed sections. I've linked below UK based distributors, but you should be able to find these parts locally pretty easily.
 
 
@@ -45,16 +47,17 @@ Components:
 
 ![Printed elements in Orange](doc/img/Interface.png)
 3D printed components:
- - Wall_Mount.STL, you'll need to of these. They attach to 2040 extrusion using T-Nuts, and then use command strips to stick to the wall
- - Gantry_Front.STL
- - Gantry_Back.STL
- - Gantry_Clamp.STL, this clamps the loose end of the timing belt to the gantry, and is secured to Gantry_back with two M3 bolts. I used threaded inserts but should work fine without
- - Stepper_Mount.STL, houses the Pi, stepper, limit switch, motor driver and DC terminal connector. Attaches to the 2040 extrusion via T-Nuts. Stick to the bottom left of the Dibond back with expoxy or double sided-tape
- - Other_Mount.STL, this sticks to the bottom right corner of the dibond, and secures the tensioner end of the 2040 extrusion. I reccomend sticking the Dibond to these mounts once everything else has been assembled onto the extrusion
-
+ - [Wall_Mount.STL](cad/stl/Wall_Mount.stl), you'll need to of these. They attach to 2040 extrusion using T-Nuts, and then use command strips to stick to the wall
+ - [Gantry_Front.STL](cad/stl/Gantry_Front.stl)
+ - [Gantry_Back.STL](cad/stl/Gantry_Back.stl)
+ - [Gantry_Clamp.STL](cad/stl/Gantry_Clamp.stl), this clamps the loose end of the timing belt to the gantry, and is secured to Gantry_back with two M3 bolts. I used threaded inserts but should work fine without
+ - [Stepper_Mount.STL](cad/stl/Stepper_Mount.stl), houses the Pi, stepper, limit switch, motor driver and DC terminal connector. Attaches to the 2040 extrusion via T-Nuts. Stick to the bottom left of the Dibond back with expoxy or double sided-tape
+ - [Other_Mount.STL](cad/stl/Other_Mount.stl), this sticks to the bottom right corner of the dibond, and secures the tensioner end of the 2040 extrusion. I reccomend sticking the Dibond to these mounts once everything else has been assembled onto the extrusion
 
 You'll also need access to Jumper cables, M3, M4, M5 nuts and bolts as well as some general adhesive such as two part epoxy. Refer to the Step file to see how everything comes together, I've made sure everything is toleranced accurately so you can convert any part to STLs to print if you can't source them. 
 
+# Prototyping
+![Prototyping](doc/img/Prototyping.png)
 
 
 
