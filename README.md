@@ -23,7 +23,7 @@ The enclosures are made from the following material:
 
 ## Ambient interface
 The ambient interface uses a variety of readily available 3D printer parts, a custom dibond panel and a few 3D printed sections. I've linked below UK based distributors, but you should be able to find these parts locally pretty easily.
-![CAD](doc/img/interface.png)
+
 
 Components:
  - [2040 V-Slot Aluminium Profile](https://printermods.co.uk/products/sku11014?variant=39904045334678) cut to 450mm
@@ -40,6 +40,7 @@ Components:
  - [Large Command strips](https://www.screwfix.com/p/command-self-adhesive-strips-assorted-16-piece-set/109hp) Great for mounting both the interface and skylights. Check your local hardware store, they will mjost likely stock these
  - [Universal power adapter](https://www.amazon.co.uk/gp/product/B09TRL3XV9/ref=ox_sc_act_title_1?smid=A3QFP7NSA4Z43O&psc=1) You'll need these to power the lights and interface. I reccomend this variety as theyre adjustable and include multiple adapters, including the terminal connector used in this project
 
+![Printed elements in Orange](doc/img/Interface.png)
 3D printed components:
  - Wall_Mount.STL, you'll need to of these. They attach to 2040 extrusion using T-Nuts, and then use command strips to stick to the wall
  - Gantry_Front.STL
