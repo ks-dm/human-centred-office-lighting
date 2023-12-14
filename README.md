@@ -2,7 +2,7 @@
  
  This project pilots an ergonomic lighting system that mimics natural daylight, complementing the human environment, created for my 4th year Internet of Things elective module.
 
- This repository contains relevant code, tools and files to recereate the tests outline in the report, found under doc.
+ This repository contains relevant code, tools and files to recereate the tests outline in the [report](doc/Human_centred_office_lighting.pdf), found under doc.
  
 ## Video
 <a href="https://www.youtube.com/watch?v=UIQVlB2CDCI">
@@ -10,7 +10,7 @@
 </a>
 
 # CAD
-Ive included relevant STEP files and parts lists in case you want to build the skylights detailed in the [report](doc/Human_centred_office_lighting.pdf)
+Ive included relevant STEP files and parts lists in case you want to build the skylights and interface detailed in the [report](doc/Human_centred_office_lighting.pdf)
 
 ## Skylights
 ![Skylight](doc/img/Skylights.png)
@@ -41,7 +41,7 @@ Components:
  - [Raspberry Pi Zero](https://shop.pimoroni.com/products/raspberry-pi-zero-2-w?variant=39493046075475) You'll need a microSD card, keyboard, mouse, monitor and 5V Micro USB power supply to program this. Pimoroni offer a lot of these accesories -  really good UK based supplier
  - [BH1745 Luminance and Colour Sensor](https://shop.pimoroni.com/products/bh1745-luminance-and-colour-sensor-breakout?variant=12767599755347) I used the pimoroni breakout version of this sensor (not the adafruit one), so CAD reflects this.
  - [NEMA17 Stepper Motor](https://shop.pimoroni.com/products/nema-stepper-motor?variant=31384801017939)
- - [120mm * 523mm custom printed white aluminium dibond](https://www.vcprint.co.uk/dibond-aluminium-signs.html) I used this print shop for the project, just send them an email asking for a custom size and indlude the GRADIENT.pdf file
+ - [120mm * 523mm custom printed white aluminium dibond](https://www.vcprint.co.uk/dibond-aluminium-signs.html) I used this print shop for the project, just send them an email asking for a custom size and indlude the [GRADIENT.pdf](cad/GRADIENT.pdf) file
  - [Large Command strips](https://www.screwfix.com/p/command-self-adhesive-strips-assorted-16-piece-set/109hp) Great for mounting both the interface and skylights. Check your local hardware store, they will mjost likely stock these
  - [Universal power adapter](https://www.amazon.co.uk/gp/product/B09TRL3XV9/ref=ox_sc_act_title_1?smid=A3QFP7NSA4Z43O&psc=1) You'll need these to power the lights and interface. I reccomend this variety as theyre adjustable and include multiple adapters, including the terminal connector used in this project
 
@@ -57,7 +57,7 @@ Components:
 You'll also need access to Jumper cables, M3, M4, M5 nuts and bolts as well as some general adhesive such as two part epoxy. Refer to the Step file to see how everything comes together, I've made sure everything is toleranced accurately so you can convert any part to STLs to print if you can't source them. 
 
 # Prototyping
-![Prototyping](doc/img/Prototyping.png)
+![Prototyping](doc/img/Prototyping.gif)
 
 
 
