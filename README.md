@@ -57,10 +57,56 @@ Components:
 You'll also need access to Jumper cables, M3, M4, M5 nuts and bolts as well as some general adhesive such as two part epoxy. Refer to the Step file to see how everything comes together, I've made sure everything is toleranced accurately so you can convert any part to STLs to print if you can't source them. 
 
 # Prototyping
+
 ![Prototyping](doc/img/Prototyping.gif)
 
+This project uses a wide variety of tools and methods to prototype the effects outlined in the report. For repeatability's sake, I've included as many as possible in this repository.
 
+### Required Software:
 
+1. [Download and install Processing 4](https://processing.org/download)
+    - add the video library for processing 4 (navigate to sketch→ library manager)
+2. [Download and install Arduino](https://www.arduino.cc/en/software)
+    - Download and install the [Teensyduino](https://www.pjrc.com/teensy/td_download.html) Add-On for Arduino
+    - add the Teensy Board Library (via the arduino board manager)
+3. Get a Protopie Pro License with at least 1 Editor seat - if you're a student you can apply for a 1 year free trial
+4. [Download and install Protopie Studio](https://www.protopie.io/download)
+5. [Download and install Protopie Connect](https://www.protopie.io/download#connect-download)
+6. [Download and install TouchDesigner](https://derivative.ca/download)
+
+You can edit and test the individual protopie files in the main **protopie** application. However, if you want to run them in a connected mode, you have to load the local protopie files into the **protopie connect** application and launch them from there. Additionally, make sure all devices use the same WiFi.
+
+## Screen Grabber
+Essentially mirrors your screen onto your WS2812B (Neopixel) LED Strip. Really useful for prototyping lighting animations and effects before having to commit anything to code.
+
+- [**ScreenPixels_OctoWS2811_Grabber.pde**](proto/ScreenPixels_OctoWS2811_Grabber.pde) --> a java based processing sketch that grabs pixel values from your screen and sends them as RGB values via USB to the teensy board, which drives the LED strip
+
+- [**VideoDisplay_OctoWS2811.ino**](proto/VideoDisplay_OctoWS2811_Teensy4.ino) (this is the code that runs on the little Teensy board. It transforms the incoming RGB values from USB, and outputs them as LED signals via Pin 2.)
+
+### Potential additional actions that might need to be taken:
+- Update the serial port in "ScreenPixels_OctoWS2811_Grabber.pde", line 85
+- Grant Desktop access for the Processing Sketch, so that the Java Robot can track your screen content and send the RGB values to the Teensy board via USB.
+
+## TouchDesigner 
+Free for non-commercial use, this node-based visual programming language is used throughout multimedia experience and interaction design. In this project, I connected a particle system to the OpenWeatherMap API, and used the Grabber tool to mirror the behavioir onto the skylights
+- [Weather.toe](proto/Weather.toe) You have to reposition and resize the Weather.toe file window to match the monitored area of your screen.
+
+# Main Python file
+
+[Circadian.py](/firmware/Circadian-v1.py) Is configured to run on a Raspberry Pi Zero with the following pinout:
+
+![wiring](doc/img/wiring.png)
+
+And uses the following libraries:
+ - [Pysolar](https://pypi.org/project/pysolar/)
+ - [Astral](https://pypi.org/project/astral/)
+ - [Neopixel](https://pypi.org/project/neopixel/)
+ - [Ephem](https://pypi.org/project/ephem/)
+ - [Colour science](https://pypi.org/project/colour-science/)
+ - [BH1745](https://github.com/pimoroni/bh1745-python)
+
+You'll have to 'sudo pip install library_name' each of these on your Pi. 
+[Thingspeak Channel](https://thingspeak.com/channels/2366620)
 
 
 
