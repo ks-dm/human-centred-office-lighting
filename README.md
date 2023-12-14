@@ -10,18 +10,21 @@
 </a>
 
 # CAD
-Ive included step files in this repo in case you want to build the same actuations mentioned in the report. The skylights can be made entirely with the use of a lasercutter or CNC router, although you will need to solder the neopixel strips together.
+Ive included relevant STEP files and parts lists in case you want to build the skylights detailed in the [report](doc/Human_centred_office_lighting.pdf)
 
 ## Skylights
-The skylights use WS2812B RGB LEDs, the oem version of Neopixels. For this project, I used [144 LED/M strips](https://www.amazon.co.uk/dp/B07Q9KCC6M?psc=1&ref=ppx_yo2ov_dt_b_product_details) and each light could fit around 178 individual LEDS (4 metres of strips used for 3 lights)
+![Skylight](doc/img/Skylights.png)
+The skylights can be made using only a laser cutter, and I've included the .dxf files for each sheet material in this repo. Adjust the power and speed according to you machine specs.
 
-The enclosures are made from the following material:
- - [9mm birch plywood](https://www.techsoft.co.uk/products/laser-cutting-materials/laser-grade-plywood-birch)
- - [3mm White Acrylic](https://www.techsoft.co.uk/products/laser-cutting-materials/acrylic-coloured-clear)
- - [3mm Frosted Perspex](https://www.cutmy.co.uk/plastic/acrylic-perspex-sheets/frosted/)
- - [12mm standoffs](https://www.amazon.co.uk/dp/B0851MNP1F?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+The enclosures are made from the following materials:
+ - [144/m WS2812B RGB LED strip](https://www.amazon.co.uk/dp/B07Q9KCC6M?psc=1&ref=ppx_yo2ov_dt_b_product_details), these are unrbanded neopixels, and I was able to fit around 174 of them in each Skylight. That equated to around 4 Metres to make 3 Skylights. You'll have to cut these into two long strips of 75 LEDs and two short strips of 12 LEDs per light, and solder them back into a continuous loop.
+ - [9mm birch plywood](https://www.techsoft.co.uk/products/laser-cutting-materials/laser-grade-plywood-birch), The inner volume of the skylight is created with 3 layers of this 9mm laser ply, connected with wood glue. The DXF file included splits each layer into 4 parts for better tesselation and material use. You could also route this part out of a thicker stock of MDF or plywood if you have access to a CNC.
+ - [3mm White Acrylic](https://www.techsoft.co.uk/products/laser-cutting-materials/acrylic-coloured-clear), this amkes up the tob and bottom of the plywood sandwhich. The LED strips also get attached to the top piece of acrylic. Refer to the video to see how this is done.
+ - [3mm Frosted Perspex](https://www.cutmy.co.uk/plastic/acrylic-perspex-sheets/frosted/), I reccomend getting a large stock of this and lasercutting.
+ - [12mm standoffs](https://www.amazon.co.uk/dp/B0851MNP1F?psc=1&ref=ppx_yo2ov_dt_b_product_details) Any generic standoff will work, but the brushed steel ones used for mirrors help create a nice touch!
 
 ## Ambient interface
+![Interface](doc/img/Ambient.png)
 The ambient interface uses a variety of readily available 3D printer parts, a custom dibond panel and a few 3D printed sections. I've linked below UK based distributors, but you should be able to find these parts locally pretty easily.
 
 
